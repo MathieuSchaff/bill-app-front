@@ -149,23 +149,23 @@ Lien : [src/container/Dashboard.js](https://github.com/MathieuSchaff/bill-app-fr
 
 [Lien vers les tests de Bills](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/Bills.js)
 
-![Test view](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/viewbilltest.png)
+![Test view](./readme/container.PNG)
 
 ----------------------------
 ### container/Bills
 
 [Lien vers les tests de Bills](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/Bills.js)
 
-![Test view](./src/readme/container.png)
+![Test view](./readme/container.PNG)
 ----------------------------
 ### container/ NewBill
 
 [Lien vers les tests de NewBill](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/NewBill.js)
 
-![Test view](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/container.png)
+![Test view](./readme/container.PNG)
 
 ----------------------------
 ###  Taux de couverture jest
 
-![test de couverture](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/CouvertureTest.png)
+![test de couverture](./readme/CouvertureTest.png)
 ----------------------------
