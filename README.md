@@ -1,3 +1,7 @@
+# Billed 
+
+![Logo](./readme/billed.png)
+
 
 ## L'architecture du projet :
 Ce projet, dit frontend, est connecté à un service API backend que vous devez aussi lancer en local.
@@ -172,5 +176,5 @@ Lien : [src/container/Dashboard.js](https://github.com/MathieuSchaff/bill-app-fr
 
 ###  Plan tests END to END
 
-[Lien vers le plan de test END to END](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/E2E-Employee.pdf)
+[Lien vers le plan de test END to END](https://github.com/MathieuSchaff/bill-app-front/blob/main/readme/E2E-Employee.pdf)
 ----------------------------
