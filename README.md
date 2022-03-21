@@ -167,5 +167,5 @@ Lien : [src/container/Dashboard.js](https://github.com/MathieuSchaff/bill-app-fr
 ----------------------------
 ###  Taux de couverture jest
 
-![test de couverture](./readme/CouvertureTest.png)
+![test de couverture](./readme/CouvertureTest.PNG)
 ----------------------------
