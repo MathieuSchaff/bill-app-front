@@ -92,3 +92,80 @@ mot de passe : admin
 utilisateur : employee@test.tld
 mot de passe : employee
 ```
+# Bill-app ( coté front-end)
+
+Le but de ce projet était de résoudre des bugs, d'implémenter des tests et faire une fiche E2E
+
+----------------------------------------------
+### Bug-report Bills
+
+```
+const rows = (data) => {
+  const datesSorted = data.sort((a, b) => {
+    return (new Date(a.date) < new Date( b.date) ? 1 : -1)})
+  return (datesSorted && datesSorted.length) ? datesSorted.map(bill => row(bill)).join("") : ""
+}
+```
+Lien : [src/view/Bills.js](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/views/BillsUI.js)
+----------------------------------------------
+### Bug report - Login
+Code changé :  
+`
+handleSubmitAdmin = e => {
+    e.preventDefault()
+    const user = {
+      type: "Admin",
+      email: e.target.querySelector(`input[data-testid="admin-email-input"]`).value,
+      password: e.target.querySelector(`input[data-testid="admin-password-input"]`).value,
+      status: "connected"
+    }
+`  
+
+  Anciennement avec :  
+`
+email: e.target.querySelector(input[data-testid="employee-email-input"]).value,
+password: e.target.querySelector(input[data-testid="employee-password-input"]).value,
+`
+
+Lien : [src/container/Login.js](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/Login.js)
+
+----------------------------------------------
+### Bug hunt Bills*
+Empêcher la saisie d'une extension différente de jpg, jpeg ou png:
+
+`if(file.name.match(/.(jpg|jpeg|png)$/i))`
+
+Lien : [src/container/Dashboard.js](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/NewBill.js)
+
+----------------------------------------------  
+### Bug hunt Dashboard  
+`bills.forEach(bill => {$(`#status-bills-container${index} #open-bill${bill.id}`).click((e) => this.handleEditTicket(e, bill, bills))})`
+
+Lien : [src/container/Dashboard.js](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/Dashboard.js)
+----------------------------------------------
+## Tests unitaires
+----------------------------------------------
+### view/Bills
+
+[Lien vers les tests de Bills](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/Bills.js)
+
+![Test view](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/viewbilltest.png)
+
+----------------------------
+### container/Bills
+
+[Lien vers les tests de Bills](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/Bills.js)
+
+![Test view](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/container.png)
+----------------------------
+### container/ NewBill
+
+[Lien vers les tests de NewBill](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/NewBill.js)
+
+![Test view](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/container.png)
+
+----------------------------
+###  Taux de couverture jest
+
+![test de couverture](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/CouvertureTest.png)
+----------------------------
