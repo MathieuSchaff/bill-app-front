@@ -156,7 +156,7 @@ Lien : [src/container/Dashboard.js](https://github.com/MathieuSchaff/bill-app-fr
 
 [Lien vers les tests de Bills](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/Bills.js)
 
-![Test view](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/readme/container.png)
+![Test view](./src/readme/container.png)
 ----------------------------
 ### container/ NewBill
 
