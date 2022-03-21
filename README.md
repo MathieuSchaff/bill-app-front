@@ -169,3 +169,8 @@ Lien : [src/container/Dashboard.js](https://github.com/MathieuSchaff/bill-app-fr
 
 ![test de couverture](./readme/CouvertureTest.PNG)
 ----------------------------
+
+###  Plan tests END to END
+
+[Lien vers le plan de test END to END](https://github.com/MathieuSchaff/bill-app-front/blob/main/src/containers/E2E-Employee.pdf)
+----------------------------
